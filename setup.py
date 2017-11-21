@@ -22,5 +22,6 @@ setup(
     ),
     description=SHORT,
     long_description=SHORT,
-    test_suite='test_claude',
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest']
 )
