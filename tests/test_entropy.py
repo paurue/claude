@@ -2,6 +2,7 @@ import unittest
 import numpy as np
 from claude.measures import information_entropy
 
+
 class TestEntropy(unittest.TestCase):
     SAMPLE_SIZE = 10000
     SAMPLE_SIZE_SMALL = 100
@@ -21,18 +22,21 @@ class TestEntropy(unittest.TestCase):
         self.assertEqual(information_entropy(x), 1)
 
     def test_max_entropy_2(self):
-        x = np.concatenate([i * np.ones(self.SAMPLE_SIZE_SMALL) for i in range(4)])
+        x = np.concatenate([i * np.ones(self.SAMPLE_SIZE_SMALL)
+                            for i in range(4)])
         self.assertEqual(information_entropy(x), 2)
 
     def test_entropy_1(self):
         x = np.random.random(self.SAMPLE_SIZE) > 0.5
-        self.assertEqual(self.within_tolerance(information_entropy(x), 1), True)
+        self.assertEqual(self.within_tolerance(information_entropy(x), 1),
+                         True)
 
     def test_entropy_2(self):
         sample_size = 10
         x = np.arange(sample_size)
         self.assertEqual(self.within_tolerance(information_entropy(x),
                                                np.log2(sample_size)), True)
+
 
 if __name__ == '__main__':
     unittest.main()
