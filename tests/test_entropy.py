@@ -1,6 +1,6 @@
 import pytest
 import numpy as np
-from claude.measures import information_entropy
+from claude.information import information_entropy
 
 
 SAMPLE_SIZE = 10000

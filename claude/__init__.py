@@ -1,4 +1,4 @@
-from .measures import *
+from .information import *
 
 authors = ['Pau Rué']
 
