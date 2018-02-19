@@ -13,9 +13,9 @@ setup(
     packages=[
         'claude',
     ],
-    url='https://github.schibsted.io/pau-rue/claude',
+    url='https://github.com/paurue/claude,
     author=claude.__author__,
-    author_email='pau.rue@schibsted.com',
+    author_email='pau.rue@gmail.com',
     classifiers=(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6'
