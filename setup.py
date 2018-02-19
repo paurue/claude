@@ -13,7 +13,7 @@ setup(
     packages=[
         'claude',
     ],
-    url='https://github.com/paurue/claude,
+    url='https://github.com/paurue/claude',
     author=claude.__author__,
     author_email='pau.rue@gmail.com',
     classifiers=(
